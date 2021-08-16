@@ -1,0 +1,11 @@
+新規作成ページ
+<%= form_with model: @user do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :age %>
+  <%= f.number_field :age %>
+
+  <%= f.submit %>
+
+<% end %>

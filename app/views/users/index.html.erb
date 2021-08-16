@@ -1,0 +1,13 @@
+一覧ページです
+<%= link_to '新規作成', new_user_path %>
+
+<%
+=begin%>
+ <% @users.each do |user| %>
+  <%= user.name %>
+  <%= user.age %>
+<% end %> 
+<%
+=end%>
+
+<%= render @users %>
